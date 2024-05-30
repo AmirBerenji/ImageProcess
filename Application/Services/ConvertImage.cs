@@ -15,7 +15,6 @@ namespace Application.Services
                 byte[] imageBytes = Convert.FromBase64String(base64);
                 using (MemoryStream ms = new MemoryStream(imageBytes))
                 {
-                    // Create an Image object from the MemoryStream
                     Image image = Image.FromStream(ms);
                     return image;
                 }
